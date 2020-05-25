@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    width: 92%;
+}
+
+body {
+    background-color: hsl(257, 40%, 49%);
+    background-image: url('./bg-desktop.svg');
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 108.5%;
+    height: 67em;
+
+    font-family: 'Open Sans';
+    font-weight: 400;
+}
+
+.main {
+    display: flex;
+    justify-content: space-around   ;
+    flex-direction: column;
+    align-self: center;
+    width: 90%;
+    height: 80%;
+    margin: 5em;
+}
+
+.main-body {
+    margin-top: 40px;
+    display: flex;
+}
+
+.logo {
+    align-self: flex-start;
+}
+
+.body-left {
+    width: 64%;
+}
+
+.illustration-mockups {
+    width: 90%;
+}
+
+.body-right {
+    width: 40%;
+    height: 100%;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.body-right-main {
+    
+    margin-top: 50px;
+    width: 80%;
+    height: 50%;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.body-right h1 {
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 50px;
+}
+
+.body-right p {
+    font-size: 18px;
+    letter-spacing: 1px;
+    width: 670px;
+    font-weight: 400;
+    font-family: 'Poppins';
+}
+
+.body-right button {
+    align-content: center;
+    color: hsl(257, 40%, 49%);
+    padding: 17px;
+    width: 18em;
+    border-radius: 50px;
+    border: 0;
+    box-shadow: 2px 2px 2px #000;
+}
+
+.social-media {
+    align-self: flex-end;
+    display: flex;
+    margin-right: 46px;
+}
+
+.social-media-icon {
+    border-radius: 50%;
+    border: 1px solid #fff;
+    padding: 0.5em 0.6em;
+    margin: 8px;
+}
+
+.fab {
+    color: #fff;
+    width: 20px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+    html {
+        height: 80em;
+        border: 1px solid pink;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+    }
+    body {
+        background-image: url('./bg-mobile.svg');
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        width: 22.4em;
+        height: 80em;
+        margin: 0;
+        border: 1px solid red;
+
+        background-repeat: no-repeat;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size:  none;
+        background-size: initial;
+        
+    }
+    .main {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+
+        align-self: center;
+        width: 22em;
+        height: 100%;
+        margin: 1em;
+    }
+    .main-body {
+        margin: 0;
+        padding: 0;
+        height: 50%;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .body-left {
+
+        margin-top: 2em;
+        width: 112%;
+        height: 10%;
+    }
+    .body-right {
+        width: 100%;
+        height: 50%;
+        align-items: center;
+        text-align: center;
+    }
+    .body-right h1 {
+        align-self: center;
+        font-family: 'Poppins';
+        font-weight: 400;
+        font-size: 1.6em;
+        width: 12em;
+    }
+    .body-right p {
+        align-self: center;
+        font-size: 14px;
+        letter-spacing: 1px;
+        width: 100%;
+        font-weight: 400;
+        font-family: 'Poppins';
+    }
+    .body-right button {
+        align-self: center;
+        align-content: center;
+        color: hsl(257, 40%, 49%);
+        padding: 17px;
+        width: 18em;
+        border-radius: 50px;
+        border: 0;
+        box-shadow: 2px 2px 2px #000;
+    }
+    .social-media {
+        margin-right: 0;
+        align-self: center;
+    }
+    
+}
