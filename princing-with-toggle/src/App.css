@@ -1,0 +1,252 @@
+/* desktop */
+
+.App-desktop {  
+    text-align: center;
+    background-color: hsl(240, 78%, 98%);
+
+    /* background images */
+    background-image: url('./assets/bg-bottom.svg'), url('./assets/bg-top.svg');
+    background-repeat: no-repeat;  
+    background-position: bottom left, top right;
+    background-size: 20%, 20%;
+
+    height: 960px;
+
+    display: flex;
+    justify-content: center;
+}
+
+.body-desktop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 2%;
+    bottom: 0;
+    width: 90%;
+    margin-top: 4%;
+    margin-bottom: 4%;
+}
+
+.body-header-desktop {
+    margin-top: 60px;
+}
+
+.body-selector-desktop {
+    margin-top: 30px;
+    display: flex;
+    width: 240px;
+    justify-content: space-between;
+    align-items: center;
+    color: hsl(234, 14%, 74%);
+}
+
+.body-cards-desktop {
+    margin-top: 60px;
+    display: flex;
+    width: 1060px;
+    height: 60%;
+    align-items: center;
+}
+
+.body-cards-desktop .card {
+    width: 100%;
+    border-radius: 4%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.body-cards-desktop .card h2 {
+    font-weight: 700;
+    font-size: 50px;
+    margin-top: 6%;
+}
+
+.body-cards-desktop .card div{
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    align-self: center;
+}
+
+.body-cards-desktop .card div p {
+    border-top: 0.2px solid hsl(234, 14%, 74%);
+    padding: 20px;
+} 
+
+.body-cards-desktop .card div p:last-child {
+    border-bottom: 0.2px solid hsl(234, 14%, 74%);
+} 
+
+.body-cards-desktop .left-card, .right-card {
+    height: 90%;
+    background-color: #fff;
+}
+
+.body-cards-desktop .left-card button, .right-card button {
+    width: 70%; 
+    background-color: #fff;
+    align-self: center;
+    background-image: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+    border-radius: 10px;
+    height: 10%;
+    border: 0;
+    color: #fff;
+}
+
+.body-cards-desktop .left-card button:hover, .right-card button:hover {
+    background-color: #fff;
+    border: 1px solid hsl(237, 63%, 64%);
+    color: hsl(237, 63%, 64%);
+    background-image: linear-gradient(#fff, #fff);
+    cursor: pointer;
+}
+
+.body-cards-desktop .center-card {
+    height: 100%;
+    color: #fff;
+    background-image: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+}
+
+.body-cards-desktop .center-card button {
+    background-color: #fff;
+    border-radius: 10px;
+    height: 10%;
+    width: 70%;
+    align-self: center;
+    border: 0;
+    color: hsl(237, 63%, 64%);
+}
+
+.body-cards-desktop .center-card button:hover {
+    background-image: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+    color: #fff;
+    cursor: pointer;
+    border: 1px solid #fff;
+}
+
+/* mobile */
+
+.App-mobile {  
+    text-align: center;
+    background-color: hsl(240, 78%, 98%);
+
+    /* background images */
+    background-image: url('./assets/bg-bottom.svg'), url('./assets/bg-top.svg');
+    background-repeat: no-repeat;  
+    background-position: bottom left, top right;
+    background-size: 30%, 30%;
+
+    height: 1630px;
+}
+
+.body-mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.body-header-mobile {
+    margin-top: 70px;
+}
+
+.body-selector-mobile {
+    display: flex;
+    margin-top: 50px;
+    width: 240px;
+    justify-content: space-between;
+    align-items: center;
+    color: hsl(234, 14%, 74%);
+}
+
+.body-cards-mobile {
+    display: flex;
+    flex-direction: column;
+    margin-top: 80px;
+    height: 1300px;
+    width: 300px;
+}
+
+.body-cards-mobile .card {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 8px;
+}
+
+.body-cards-mobile .card:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+.body-cards-mobile .card h2 {
+    font-weight: 700;
+    font-size: 50px;
+    margin-top: 6%;
+}
+
+
+.body-cards-mobile .card div{
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    align-self: center;
+}
+
+.body-cards-mobile .card div p {
+    border-top: 0.2px solid hsl(234, 14%, 74%);
+    padding: 20px;
+} 
+
+.body-cards-mobile .card div p:last-child {
+    border-bottom: 0.2px solid hsl(234, 14%, 74%);
+}
+
+.body-cards-mobile .left-card, .right-card {
+    background-color: #fff;
+}
+
+.body-cards-mobile .left-card button, .right-card button {
+    width: 70%; 
+    background-color: #fff;
+    align-self: center;
+    background-image: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+    border-radius: 10px;
+    height: 10%;
+    border: 0;
+    color: #fff;
+}
+
+.body-cards-mobile .left-card button:hover, .right-card button:hover {
+    background-color: #fff;
+    border: 1px solid hsl(237, 63%, 64%);
+    color: hsl(237, 63%, 64%);
+    background-image: linear-gradient(#fff, #fff);
+    cursor: pointer;
+}
+
+.body-cards-mobile .center-card {
+    color: #fff;
+    background-image: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+}
+
+.body-cards-mobile .center-card button {
+    background-color: #fff;
+    border-radius: 10px;
+    height: 10%;
+    width: 70%;
+    align-self: center;
+    border: 0;
+    color: hsl(237, 63%, 64%);
+}
+
+.body-cards-mobile .center-card button:hover {
+    background-image: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+    color: #fff;
+    cursor: pointer;
+    border: 1px solid #fff;
+}
